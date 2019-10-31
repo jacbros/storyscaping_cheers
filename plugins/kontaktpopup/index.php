@@ -66,6 +66,7 @@ function popupContact(){
     $content .= '</div>';
     
     return $content;
+    //Her printer vi vores variable til siden som html. Så den vises
 }
 
 #First parameter is a self choosen name for a unique short-code. Second parameter is the name of the function that creates the form
