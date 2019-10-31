@@ -8,6 +8,7 @@ Template: oceanwp
 Version: 1.0
 */
 
+/* Dette får vores pil til at hoppe */
 #pilned{
 	-webkit-animation: flash linear 1s infinite;
 	animation: flash linear 2s infinite;
