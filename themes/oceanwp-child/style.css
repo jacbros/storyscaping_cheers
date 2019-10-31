@@ -53,3 +53,6 @@ Version: 1.0
         transform: scale(1.25);
     }
 }
+.gronkort {
+    transform: rotate(10deg)
+}
