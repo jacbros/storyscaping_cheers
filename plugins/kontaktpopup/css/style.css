@@ -1,0 +1,177 @@
+*{
+	margin:0;
+	padding:0;
+} 
+/* reset button default style */
+button{
+	/* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* create a small space when buttons wrap on 2 lines */
+  margin: 2px 0;
+
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 2px transparent;
+  border-radius: 4px;
+
+  /* size comes from text & padding (no width/height) */
+  padding: 0.5em 1em;
+
+  /* make sure colors have enough contrast! */
+  color: #00C0CE;
+  background-color: #eee;
+}
+.popupcontainer button{
+	padding:10px;
+	position:fixed;
+	right:0;
+	bottom:10%;
+
+}
+.contact-wrapper{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.7);
+	display:none;
+	position: fixed;
+	left:0;
+	top:0;
+	z-index:1;
+}
+#contact-header{
+	background-color:#00C0CE;
+	padding: 0 0 0.1% 5%;
+	font-family: "Baloo Bhai", sans-serif;
+}
+#contact-header-title{
+	color:#fff!important;
+}
+.contact-form{
+	background-color:#fff;
+	position: fixed;
+	left:37.5%;
+	top:10%;
+	width:25%;
+	height:80%;
+	font-family: "Quicksand", sans-serif;
+	z-index:2;
+	border-top: 20px solid #00C0CE;
+	border-bottom: 20px solid #00C0CE;
+	border-radius: 20px 20px 20px 20px;
+}
+.popupCloseButton{
+	position:absolute;
+	left:90%;
+	top:-5%;
+	background-color:#fff;
+	border:5px solid #00C0CE;
+	padding:6px 12px;
+    border-radius: 100%;
+}
+#email{
+	width: 80%;
+	padding:3% 0 3% 3%;
+	font-size:1.2em;
+	border: 3px solid #aaa;
+	margin-top:5%;
+}
+.input{
+	width:90%;
+	position:absolute;
+	left:10%;
+	cursor: text;
+}
+.fa-at{
+	margin-left:2%;
+    position: absolute;
+    left: 80%;
+    top: 45%;
+}
+.fa-envelope1{
+    color:#00C0CE;
+}
+.fa-envelope2{
+    position: absolute;
+    margin-left:2%;
+}
+textarea{
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+	resize:none!important;
+	font-size:1.2em;
+	border: 3px solid #aaa!important;
+}
+
+.textarea{
+	width:72%;
+	height:15%;
+	position:absolute;
+	bottom:30%;
+	left:10%;
+}
+input[type="submit"]{
+	position: absolute;
+	top:90%;
+	left:70%;
+}
+#contact-footer{
+	background-color:#00C0CE;
+	position:absolute;
+	bottom:0;
+	color:#fff;
+
+}
+#contact-body-text{
+    padding: 2% 5% 0 5%;
+    font-size:1.1em;
+
+}
+
+.pommes{
+    transform: translate(5%, 20%) rotateZ(330deg);
+}
+
+/*animationer*/
+.animate-open {
+	animation: open 1.2s;
+}
+
+.bgzoom{
+    animation: zoom 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes open {
+  0% {
+    -webkit-transform: translateY(100%) rotateY(180deg);
+            transform: translateY(100%) rotateY(180deg);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity:0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity:1;
+  }
+}
+.zoomywoomy{
+    animation: zoom 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes zoom{
+    0%{
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
+    }
+    100%{
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+}

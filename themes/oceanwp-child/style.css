@@ -1,0 +1,55 @@
+/*
+Theme Name: OceanWP Child
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress child theme.
+Author: Jakob F. Ottosen
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+#pilned{
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 2s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes animName {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#pilned {
+  animation: animName 2s infinite;
+}
+
+.bgzoom{
+    animation: zoom 10s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+@keyframes zoom{
+    from{
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    to{
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+}
